@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<!-- <bean id="triangle" class="demo.Triangle"> -->
+ <bean id="list" class="demo.list"> 
+ <property name="points" >
+ <list>
+ <ref bean="ZeroPoint"></ref>
+  <ref bean="point2"></ref>
+ <ref bean="point3"></ref>
+
+ 
+ </list>
+ 
+ 
+ 
+ </property>
+<!-- <property name="pointa" ref="ZeroPoint" /> -->
+<!-- <property name="pointb"  > -->
+<!-- 			<bean  class="demo.Point"> -->
+<!-- 			<property name="x" value="20"/> -->
+<!-- 			<property name="y" value="0"/> -->
+<!-- 			</bean  > -->
+<!-- </property> -->
+<!-- <property name="pointc" ref="point3" /> -->
+
+<!-- to covert the int to string we have to use java.lang.string -->
+
+
+</bean  >
+
+<bean id="ZeroPoint" class="demo.Point">
+<property name="x" value="300"/>
+<property name="y" value="1"/>
+</bean  >
+
+<bean id="point3" class="demo.Point">
+<property name="x" value="30"/>
+<property name="y" value="10"/>
+</bean>
+<bean id="point2" class="demo.Point"> 
+ 			<property name="x" value="20"/> 
+ 			<property name="y" value="0"/> 
+ 			</bean  > 
+
+
+</beans>
